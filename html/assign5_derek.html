@@ -1,0 +1,101 @@
+t<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Assignment 5: Forms 2
+	</title>
+</head>
+<body>
+	<h1>Survey</h1>
+	<p>* indicates a required field</p>
+	<form>
+		<label>
+			Please create a username*:
+			<input type="text" name="id" placeholder="Username" required>
+		</label>
+		<label>
+			Please create a password*:
+			<input type="text" name="pw" placeholder="Password" required>
+		</label>
+		<label>
+			Write your email*:
+			<input type="text" name="address" placeholder="anonymous@website.com" required>
+		</label>
+	<fieldset>
+		<legend>Birthday</legend>
+		<label>
+			Month:
+			<select name="month">
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+			</select>
+		</label>
+		<label>
+			Date:
+			<select name="date">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+		</label>
+		<label>
+			Year:
+			<select name="year">
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select>
+		</label>
+	</fieldset>
+	<fieldset>
+		<legend>Out of the following, which painting(s) do you like?</legend>
+		<label>
+			<input type="checkbox" name="drawing" value="MonaLisa">
+			<img src="../img/monaLisa.jpg" height="100" alt="monalisa">
+		</label>
+
+		<label>
+			<input type="checkbox" name="drawing" value="StarryNight">
+			<img src="../img/starryNight.jpg" height="100" alt="starrynight">
+		</label>
+
+		<label>
+			<input type="checkbox" name="drawing" value="SundayAfternoon">
+			<img src="../img/sundayAfternoon.jpg" height="100" alt="sundayafternoon">
+		</label>
+	</fieldset>
+	<fieldset>
+		<legend>Choose your gender:</legend>
+		<label>
+			<input type="radio" name="sex" value="Male">	
+			Male
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="sex" value="Female">
+			Female
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="sex" value="Other">
+			Other
+		</label>
+	</fieldset>
+
+	<label>
+		Choose your favorite color:
+		<input type="color" name="color">
+	</label>
+	<label>
+		Tell us about yourself:
+		<textarea rows="5" cols="50" maxlength="250" placeholder="250 max characters"></textarea>
+	</label>
+	<label>
+		I agree to the <a href="https://en.wikipedia.org/wiki/Terms_of_service">terms and conditions</a>*:
+		<input type="checkbox" name="agreement" value="terms and conditions">
+	</label>
+	<input type="submit" name="button">
+	</form>
+</body>
+</html>
